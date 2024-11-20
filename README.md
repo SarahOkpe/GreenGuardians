@@ -18,12 +18,13 @@ Green Guardians is a machine learning-based project aimed at identifying plant d
    - Class-level precision, recall, and F1-score included in the analysis.
 
 ## Dataset
-- Source: [Kaggle](https://www.kaggle.com/)
-- Includes ~87,000 images of healthy and diseased plant leaves.
+- **Source**: [PlantVillage Dataset on Kaggle](https://www.kaggle.com/datasets/emmarex/plantdisease)
+- This dataset contains approximately 87,000 RGB images of healthy and diseased plant leaves.
 - Sample classes:
   - `Pepper__bell___healthy`
   - `Tomato_Early_blight`
   - `Tomato_Septoria_leaf_spot`
+- The dataset includes various crops, such as apple, tomato, rice, and potato, making it diverse and robust for training the model.
 
 ## Installation
 1. Clone this repository:
