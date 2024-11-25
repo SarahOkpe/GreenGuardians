@@ -1,32 +1,32 @@
 # GreenGuardians
 
-Plant disease detection using Support Vector Machines (SVM) and feature extraction.
+Plant disease detection using multiple machine learning models and feature extraction.
 
 ## Overview
-Green Guardians is a machine learning-based project aimed at identifying plant diseases through image analysis. The project leverages SVM for classification and extracts key visual features such as color, texture, and shape from leaf images to enhance detection accuracy and efficiency.
+Green Guardians is a machine learning-based project aimed at identifying plant diseases through image analysis. The project leverages multiple classification algorithms, including SVM, Random Forest, k-NN, Logistic Regression, and XGBoost, along with extracted visual features such as color, texture, and shape from leaf images to enhance detection accuracy and efficiency.
 
 ## Features
 1. **Automated Detection**:
    - Upload an image of a plant leaf (healthy or diseased).
-   - Automated feature extraction and classification.
-2. **Feature Extraction**:
-   - **Color**: Mean RGB values.
-   - **Texture**: Gray Level Co-occurrence Matrix (GLCM).
-   - **Shape**: Geometric properties like area and perimeter.
-3. **Performance Metrics**:
-   - **Accuracy**: 81% on test data.
-   - Class-level precision, recall, and F1-score included in the analysis.
+   - Detect plant diseases using trained machine learning models.
+2. **Comprehensive Model Comparison**:
+   - Evaluated multiple models with cross-validation for robust results.
+3. **Results Visualization**:
+   - Confusion matrices and classification reports provided for each model.
+4. **Best Model**:
+   - XGBoost achieved the highest accuracy of 96%.
 
-## Dataset
-- **Source**: [PlantVillage Dataset on Kaggle](https://www.kaggle.com/datasets/emmarex/plantdisease)
-- This dataset contains approximately 87,000 RGB images of healthy and diseased plant leaves.
-- Sample classes:
-  - `Pepper__bell___healthy`
-  - `Tomato_Early_blight`
-  - `Tomato_Septoria_leaf_spot`
-- The dataset includes various crops, such as apple, tomato, rice, and potato, making it diverse and robust for training the model.
+## Results
+- **Accuracy Summary**:
+  - SVM: 94%
+  - Random Forest: 95%
+  - k-NN: 93%
+  - Logistic Regression: 90%
+  - XGBoost: 96%
+- **Conclusion**:
+  XGBoost outperformed all models with the highest accuracy and consistent results across multiple data splits.
 
-## Installation
-1. Clone this repository:
-   ```bash
-   git clone https://github.com/SarahOkpe/GreenGuardians.git
+## Future Work
+- Expand the dataset for broader generalization.
+- Explore deep learning models (e.g., CNNs) for automated feature extraction.
+- Develop a mobile or web application for real-time use.
